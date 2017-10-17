@@ -4,12 +4,40 @@
 
 # Jericho
 
-Inspired from the Jericho Missile in the movie Iron Man (2008), Jericho sends events to all the integrated event tracking clients.
+Inspired from the Jericho Missile in the movie Iron Man (2008), Jericho sends events to all the integrated analytics tools.
+Jericho makes adding(removing) new analytics tools to your existing projects a lot easier.
 
 ![alt text](https://github.com/6ameDev/resources/raw/master/Jericho/the_jericho.gif "The Jericho")
 
-License
--------
+## Install
+```
+compile ''
+```
+
+## Usage
+```java
+Map<String, Object> attributesMap;
+Map<String, Object> userPropertiesMap;
+
+// tracking event
+jericho.track("event name", attributesMap);
+
+// tracking event with location
+jericho.track("event name", attributesMap, location);
+
+// setting a single user property
+jericho.setUserProperty("name", "John");
+
+// setting user properties
+jericho.setUserProperties(userPropertiesMap);
+```
+Check out the sample app in [`sample/`] to see it in action.   
+Find the different missiles you can arm Jericho with, [here].
+
+[here]: https://github.com/6ameDev/Jericho#usage 
+[`sample/`]: https://github.com/6ameDev/Jericho/tree/master/sample
+
+## License
 
     Copyright (C) 2017 Sumit Das
 
