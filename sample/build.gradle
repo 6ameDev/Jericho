@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.2"
     defaultConfig {
-        applicationId "com.sumitdas.jericho"
+        applicationId "com.sumitdas.jericho.sample"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
@@ -25,6 +25,10 @@ dependencies {
     compile project(':jericho')
     compile rootProject.ext.appcompatv7
     compile "com.mixpanel.android:mixpanel-android:5.2.1"
+    compile "com.google.firebase:firebase-core:$firebaseVersion"
 
     testCompile rootProject.ext.junit
 }
+
+// ADD THIS AT THE BOTTOM
+apply plugin: 'com.google.gms.google-services'

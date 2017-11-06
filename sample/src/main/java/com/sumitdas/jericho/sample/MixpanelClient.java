@@ -1,4 +1,4 @@
-package com.sumitdas.sample;
+package com.sumitdas.jericho.sample;
 
 import android.location.Location;
 
